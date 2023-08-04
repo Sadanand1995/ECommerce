@@ -6,6 +6,7 @@ const productSchema = new mongoose.Schema(
       type: String,
       required: [true, "Please Enter Product Name"],
       trim: true,
+      lowercase: true,
     },
     description: {
       type: String,
@@ -38,6 +39,7 @@ const productSchema = new mongoose.Schema(
       type: String,
       required: [true, "Please Enter Product Category"],
       trim: true,
+      lowercase: true,
     },
     stock: {
       type: Number,
